@@ -1,4 +1,4 @@
-// Problem 1:
+// Problem 1 solution:
 
 const filterEvenNumbers = (filterArray: number[]): number[] => {
   const result: number[] = [];
@@ -10,16 +10,13 @@ const filterEvenNumbers = (filterArray: number[]): number[] => {
   return result;
 };
 
-filterEvenNumbers([1, 2, 3, 4, 5, 20, 78, 5]);
-
-// Problem 2:
+// Problem 2 solution:
 
 const reverseString = (str: string) => {
   return str.split("").reverse().join("");
 };
-reverseString("hello");
 
-// Problem 3:
+// Problem 3 solution:
 
 const checkType = (params: string | number) => {
   if (typeof params === "string") {
@@ -29,18 +26,14 @@ const checkType = (params: string | number) => {
   }
 };
 
-checkType("sinan");
 
-// Problem 4:
+// Problem 4 solution:
 
 const getProperty = <T>(obj: T, key: keyof T) => {
   return obj[key];
 };
 
-const user = { id: 1, name: "John Doe", age: 21 };
-getProperty(user, "id");
-
-//Problem 5:
+//Problem 5 solution:
 
 interface Book {
   title: string;
@@ -56,15 +49,7 @@ const toggleReadStatus = (book: Book) => {
   };
 };
 
-const myBook = {
-  title: "TypeScript Guide",
-  author: "Jane Doe",
-  publishedYear: 2024,
-};
-
-toggleReadStatus(myBook);
-
-// Problem 6:
+// Problem 6 solution:
 
 class Person {
   name: string;
@@ -86,14 +71,9 @@ class Student extends Person {
   }
 }
 
-const student = new Student("Alice", 20, "A");
-student.getDetails();
-
-// Problem 7:
+// Problem 7 solution:
 
 const getIntersection = (arr1: number[], arr2: number[]) => {
   const result: number[] = arr1.filter((item) => arr2.includes(item));
   return result;
 };
-
-getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
